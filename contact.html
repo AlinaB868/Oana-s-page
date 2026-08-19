@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reach Out - Oana Anea</title>
+
+    <!-- Import Fonturi Oficiale -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Conectare CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">Oana Anea</a>
+          </div>
+          <nav class="menu">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="despre-mine.html">About</a></li>
+              <li><a href="servicii.html">How I Help</a></li>
+              <li><a href="blog.html">Articles & Stories</a></li>
+              <li><a href="contact.html" class="active">Reach Out</a></li>
+            </ul>
+          </nav>
+          <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search..." />
+            <button id="searchBtn" class="search-btn">🔍</button>
+          </div>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <section class="about-hero-section">
+      <div class="container">
+        <h1 class="page-title">Get in Touch</h1>
+        <div class="divider"></div>
+      </div>
+    </section>
+    <section class="page-section">
+      <div class="container">
+        <div class="divider"></div>
+        <p class="intro-text">
+          I am here to help. Send me a message, give me a call, or schedule a
+          free discovery call.
+        </p>
+
+        <div class="contact-grid">
+          <!-- Contact Information -->
+          <div class="contact-info-card">
+            <h2>Contact Details</h2>
+
+            <div class="contact-item">
+              <h3>📧 Email</h3>
+              <p>
+                <a href="mailto:hello@oanaanea.com">hello@oanaanea.com</a>
+              </p>
+              <p class="small-text">Reply within 24 hours</p>
+            </div>
+
+            <div class="contact-item">
+              <h3>📞 Phone</h3>
+              <p><a href="tel:+40700000000">+40 700 000 000</a></p>
+              <p class="small-text">Available Mon - Fri, 9:00 - 18:00</p>
+            </div>
+
+            <div class="contact-item">
+              <h3>📍 Location</h3>
+              <p>Bucharest, Romania</p>
+              <p class="small-text">
+                Available for online sessions globally and in-person locally
+              </p>
+            </div>
+
+            <div class="contact-item">
+              <h3>🕐 Working Hours</h3>
+              <ul class="styled-list">
+                <li>Monday - Thursday: 9:00 - 18:00</li>
+                <li>Friday: 9:00 - 16:00</li>
+                <li>Custom sessions upon request</li>
+              </ul>
+            </div>
+
+            <div class="social-links-block">
+              <h3>Follow Me</h3>
+              <div class="social-buttons">
+                <a href="#" class="btn btn-outline-sm">LinkedIn</a>
+                <a href="#" class="btn btn-outline-sm">Facebook</a>
+                <a href="#" class="btn btn-outline-sm">Instagram</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-card">
+            <h2>Send a Message</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="john@example.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+40 7xx xxx xxx"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">-- Select Subject --</option>
+                  <option value="coaching">Individual Coaching Interest</option>
+                  <option value="corporate">Corporate Workshop</option>
+                  <option value="workshop">Group Intensive Workshop</option>
+                  <option value="collaboration">General Collaboration</option>
+                  <option value="other">Other Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="Tell me a bit about what you would like to achieve..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group checkbox-group">
+                <input type="checkbox" id="privacy" name="privacy" required />
+                <label for="privacy">I agree to the privacy policy *</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+              </button>
+              <p class="form-note">I will reply within 24 business hours.</p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Quick Scheduling Section -->
+        <section class="quick-scheduling-section">
+          <h2 class="section-title">Quick Booking</h2>
+          <div class="divider"></div>
+          <p class="intro-text">
+            Select the type of session that fits your schedule
+          </p>
+
+          <div class="scheduling-grid">
+            <div class="scheduling-card">
+              <h3>📋 Discovery Call</h3>
+              <p class="scheduling-desc">
+                30-45 minutes to get acquainted and map your goals.
+              </p>
+              <p class="scheduling-price">Free</p>
+              <button
+                class="btn btn-secondary"
+                onclick="handleScheduling('consultation')"
+              >
+                Book Call
+              </button>
+            </div>
+            <div class="scheduling-card">
+              <h3>👤 Coaching Session</h3>
+              <p class="scheduling-desc">
+                60 minutes of intensive 1-on-1 coaching.
+              </p>
+              <p class="scheduling-price">€100 - €150</p>
+              <button
+                class="btn btn-secondary"
+                onclick="handleScheduling('session')"
+              >
+                Book Session
+              </button>
+            </div>
+            <div class="scheduling-card">
+              <h3>📞 Phone Intro</h3>
+              <p class="scheduling-desc">30 minutes initial phone exchange.</p>
+              <p class="scheduling-price">Free</p>
+              <button
+                class="btn btn-secondary"
+                onclick="handleScheduling('call')"
+              >
+                Book Call
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+          <h2 class="section-title">Contact FAQs</h2>
+          <div class="divider"></div>
+          <div class="faq-grid">
+            <div class="faq-card">
+              <h3>What happens during the initial discovery call?</h3>
+              <p>
+                It is a free 30 to 45-minute consultation where we discuss your
+                goals, challenges, and determine if my program is the right fit
+                for you.
+              </p>
+            </div>
+            <div class="faq-card">
+              <h3>When is the best time to reach out?</h3>
+              <p>
+                You can send an email anytime (I respond within 24 hours) or
+                call during regular business hours. For scheduling, please reach
+                out at least 48 hours in advance.
+              </p>
+            </div>
+            <div class="faq-card">
+              <h3>Are sessions available online?</h3>
+              <p>
+                Yes! I conduct online sessions globally via Zoom or Google Meet
+                with the same depth and structure as in-person meetings.
+              </p>
+            </div>
+            <div class="faq-card">
+              <h3>What if I need to reschedule?</h3>
+              <p>
+                Life happens. Please notify me at least 24 hours prior to our
+                scheduled session to reschedule without penalty.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">Oana Anea</div>
+          <div class="footer-links">
+            <a href="mailto:hello@oanaanea.com">hello@oanaanea.com</a>
+            <a href="#">LinkedIn</a>
+            <a href="index.html">oanaanea.com</a>
+          </div>
+          <div class="copy">&copy; 2026 Oana Anea. All rights reserved.</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
